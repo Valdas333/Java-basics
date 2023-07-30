@@ -11,5 +11,12 @@ public class TreePlanter {
         System.out.println("***** ");
         System.out.println("  *  ");
         System.out.println("  *  ");
+        // multiple trees in one row with a new line escape symbol.(Hardcoding fun!:))
+        System.out.print("\n  *     *\n");
+        System.out.print(" ***   ***\n");
+        System.out.print("***** ***** \n");
+        System.out.print("  *     *\n");
+        System.out.print("  *     *\n");
+
     }
 }
