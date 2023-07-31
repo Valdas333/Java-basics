@@ -12,8 +12,5 @@ public class MathMagic {
         int stepFive = stepFour - myNumber;
         int stepSix = stepFive / 6;
         System.out.println(stepSix);
-
-
-
     }
 }
