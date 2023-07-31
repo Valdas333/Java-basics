@@ -24,6 +24,12 @@ public class LemonadeStore {
         double totalPrice = price + price*tax;
         return totalPrice;
     }
+    // class represent
+    public String toString(){
+        return "This store sells " + productType + " at a price of "+ price +".";
+    }
+
+
 
     // main method
     public static void main(String[] args) {
