@@ -18,11 +18,16 @@ public class SavingsAccount {
         System.out.println("You just withdrew " + amountToWithdraw);
         return amountToWithdraw;
         }
+     public String toString(){
+        return "Your account balance is " + balance;
+     }
+
     public static void main(String[] args){
         SavingsAccount savings = new SavingsAccount(2000);
+        System.out.println(savings);
         savings.withdraw(500);
         savings.deposit(854);
         savings.checkBalance();
-    }
+        }
 }
 
