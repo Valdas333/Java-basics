@@ -50,6 +50,8 @@ public class ShippingCalculator {
 
         book.ship();
         chemistrySet.ship();
+        System.out.println(true || false);
     }
+
 }
 
