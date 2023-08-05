@@ -1,7 +1,7 @@
 import java.util.Arrays;
 /*
 Accessing to args array, this function are called from terminal!
-Two values "Robot" and "Human"
+Two argument values "Robot" and "Human"
  */
 public class NewsfeedWithArgs {
 
@@ -12,6 +12,7 @@ public class NewsfeedWithArgs {
     }
 
     public static void main(String[] args) {
+        // ask teacher for this declaration
         NewsfeedWithArgs feed;
         if (args[0].equals("Human")) {
 
