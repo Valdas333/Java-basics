@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public class PrimeFinder {
+public class NumberFunctions {
     /*
     A function what finds prime numbers,
     either passed by a single number or an array of numbers,
@@ -27,7 +27,6 @@ public class PrimeFinder {
         }
         return primes;
     }
-
     public void OddOrEven(String choice, int number){
         if(choice.equals("Even") && number % 2 == 0){
             System.out.println("Number " + number+ " is even");
@@ -37,13 +36,24 @@ public class PrimeFinder {
         }
     }
 
+    public void EvenList(int [] numbers){
+        ArrayList <Integer> even = new ArrayList<Integer>();
+        for (int number: numbers) {
+            if(number % 2 == 0){
+                even.add(number);
+            }
+        }
+        System.out.println(even);
+    }
+
     public static void main(String[] args) {
 
-        PrimeFinder pd = new PrimeFinder();
+        NumberFunctions pd = new NumberFunctions();
         int[] numbers = {6, 29, 28, 33, 11, 100, 101, 43, 89};
-        System.out.println(pd.IsPrime(780));
-        System.out.println(pd.OnlyPrimes(numbers));
-        pd.OddOrEven("Even", 15);
+//        System.out.println(pd.IsPrime(780));
+//        System.out.println(pd.OnlyPrimes(numbers));
+//        pd.OddOrEven("Even", 15);
+        pd.EvenList(numbers);
 
     }
 
