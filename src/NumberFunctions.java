@@ -38,12 +38,21 @@ public class NumberFunctions {
 
     public void EvenList(int [] numbers){
         ArrayList <Integer> even = new ArrayList<Integer>();
-        for (int number: numbers) {
+        for (int number: numbers){
             if(number % 2 == 0){
                 even.add(number);
             }
         }
         System.out.println(even);
+    }
+    public ArrayList<Integer> EventListGenerator(int startNum, int endNum){
+        ArrayList<Integer> evenNumList = new ArrayList<Integer>();
+        for(int i = startNum; i < endNum; i++){
+            if(i % 2 == 0){
+                evenNumList.add(i);
+            }
+        }
+        return evenNumList;
     }
 
     public static void main(String[] args) {
@@ -54,7 +63,7 @@ public class NumberFunctions {
 //        System.out.println(pd.OnlyPrimes(numbers));
 //        pd.OddOrEven("Even", 15);
         pd.EvenList(numbers);
-
+        System.out.println(pd.EventListGenerator(5,25));
     }
 
 }
