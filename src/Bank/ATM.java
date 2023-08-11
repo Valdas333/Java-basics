@@ -15,6 +15,14 @@ public class ATM{
         totalMoney += inputMoney;
     }
 
+    public void depositMoney(int amountToDeposit){
+        this.money += amountToDeposit;
+    }
+
+    public String toString(){
+        return "Your current balance: " + money;
+    }
+
     public void withdrawMoney(int amountToWithdraw){
         if(amountToWithdraw <= this.money){
             this.money -= amountToWithdraw;
@@ -39,8 +47,9 @@ public class ATM{
         System.out.println("Total amount of money in all ATMs: " + ATM.totalMoney);
         // calling class method without object, method created using static
         ATM.averageMoney();
-
-
+        secondATM.depositMoney(300);
+        System.out.println("Total money after some deposit to second ATM "+ secondATM.money);
+        System.out.println(firstATM);
     }
 
 }
