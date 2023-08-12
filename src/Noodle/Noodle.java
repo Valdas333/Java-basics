@@ -6,7 +6,7 @@ public class Noodle {
     private double widthInCentimeters;
     private String shape;
     protected String ingredients;
-    private String texture = "brittle";
+    protected String texture = "brittle";
 
     Noodle(double lenInCent, double wthInCent, String shp, String ingr) {
 
@@ -15,6 +15,11 @@ public class Noodle {
         this.shape = shp;
         this.ingredients = ingr;
 
+    }
+
+    public void cook(){
+        System.out.println("Boiling");
+        this.texture = "cooked";
     }
 
     public final boolean isTasty() {
@@ -28,6 +33,8 @@ public class Noodle {
         Ramen yasaiRamen = new Ramen();
         System.out.println(yasaiRamen.isTasty());
 
+        Spaetzle germanNoodle = new Spaetzle();
+        germanNoodle.cook();
     }
 
 }
