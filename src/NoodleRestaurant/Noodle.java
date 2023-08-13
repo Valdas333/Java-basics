@@ -1,4 +1,4 @@
-package Noodle;
+package NoodleRestaurant;
 
 public class Noodle {
 
@@ -25,16 +25,10 @@ public class Noodle {
     public final boolean isTasty() {
 
         return true;
-
     }
 
-    public static void main(String[] args) {
+    public String getCookPrep() {
 
-        Ramen yasaiRamen = new Ramen();
-        System.out.println(yasaiRamen.isTasty());
-
-        Spaetzle germanNoodle = new Spaetzle();
-        germanNoodle.cook();
+        return "Boil noodle for 7 minutes and add sauce.";
     }
-
 }

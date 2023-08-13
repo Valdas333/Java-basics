@@ -1,4 +1,4 @@
-package Noodle;
+package NoodleRestaurant;
 
 class Dinner {
 
