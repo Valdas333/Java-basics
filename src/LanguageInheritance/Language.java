@@ -22,7 +22,11 @@ public class Language {
     public static void main(String[] args) {
         Language Lithuanian = new Language("Lithuanian", 3000000,"Baltic","depends on sentences");
         Lithuanian.getInfo();
-        Mayan mexicans = new Mayan("Mayan", 32, "test" );
+        Mayan mexicans = new Mayan("Mayan", 32);
         mexicans.getInfo();
+        Language Chinese = new SinoTibetan("Chinese", 50000);
+        Chinese.getInfo();
+        Language Japan = new SinoTibetan("Japan", 5000000);
+        Japan.getInfo();
     }
 }
